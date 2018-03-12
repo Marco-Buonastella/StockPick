@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/MyPortfolio.css">
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous""></script>
+	<script type="text/javascript" src="../javascript/Stock.js"></script>
+	<script type="text/javascript" src="../javascript/MyPortfolio.js"></script>
+
+	<title>MyPortfolio</title>
+</head>
+<body class="body">
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="HomePageNavBar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-bar-items" aria-expanded="false">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+				<a href="HomePage.html" class="navbar-brand">StockPick</a>
+			</div>
+			<div class="collapse navbar-collapse" id="nav-bar-items">
+				<div class="nav navbar-nav">
+					<li>
+						<a href="MyPortfolio.html">My Portfolio</a>
+					</li>
+					<li>
+						<a href="Markets.html">Markets</a>
+					</li>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="PortfolioTableContainer container" id="portfolioTableDiv">
+		<table class ="table" id="portfolioTable">
+			<thead>
+				<tr>
+					<th>Symbol</th>
+					<th>Company</th>
+					<th>Market Open </th>
+					<th>Current Stock Price</th>
+					<th>Daily Change</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+	<div class="ButtonContainer">
+		<button type="button" class="btn" id="AddToPortfolio" onclick="launchMarketsPage()">Add Stocks to Portfolio</button>
+	</div>
+
+
+	<script type="text/javascript" src="../javascript/bootstrap.js"></script>
+
+</body>
+</html>
